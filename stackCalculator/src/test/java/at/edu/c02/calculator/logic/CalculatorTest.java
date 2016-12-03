@@ -102,6 +102,7 @@ public class CalculatorTest {
 			calc.push(0);
 			
 			double result = calc.perform(Operation.mod);
+			fail("Exception excpected");
 		}
 		catch(CalculatorException ex){
 			assertEquals("Division by zero", ex.getMessage());
