@@ -28,6 +28,11 @@ public class CalculatorImpl implements Calculator {
 			return c;
 		case mul:
 			return a * b;
+		case mod:
+			if (b== 0)
+				throw new CalculatorException("Modulo by zero not defined");
+			return a % b;
+			
 		}
 		return 0;
 	}
