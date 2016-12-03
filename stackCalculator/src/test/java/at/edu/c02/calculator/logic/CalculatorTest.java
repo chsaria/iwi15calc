@@ -105,7 +105,7 @@ public class CalculatorTest {
 			fail("Exception excpected");
 		}
 		catch(CalculatorException ex){
-			assertEquals("Division by zero", ex.getMessage());
+			assertEquals("Modulo by zero not defined", ex.getMessage());
 		}
 	}
 }
